@@ -1,0 +1,14 @@
+// app global css in SCSS form
+.bg-primary-gradient {
+  background: linear-gradient(to top, #61892f, #2389da);
+}
+
+.text-primary-gradient {
+  background-image: linear-gradient(to left, #56ab2f, #a8e063);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-bg {
+  background: #222629;
+}
