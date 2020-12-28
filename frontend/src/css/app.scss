@@ -1,6 +1,7 @@
 // app global css in SCSS form
 .bg-primary-gradient {
-  background: linear-gradient(to top, #61892f, #2389da);
+  //background: linear-gradient(to top, #61892f, #2389da);
+  background: radial-gradient(circle, rgba(35,137,218,1) 30%, rgba(97,137,47,1) 70%);
 }
 
 .text-primary-gradient {

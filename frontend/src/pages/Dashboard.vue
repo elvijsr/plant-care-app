@@ -1,15 +1,27 @@
 <template>
   <q-page class="row items-center justify-evenly">
     <q-card bordered flat class="col-10 bg-primary">
-      <q-item>
-        <q-item-section avatar>
-          <q-avatar square rounded size="3rem">
-            <img src="https://i.imgur.com/FTGpvaV.jpg">
-          </q-avatar>
-        </q-item-section>
+      <q-item dense class="q-pa-none">
+        <q-item-section class="col-shrink">
+          <q-btn color="white" round flat icon="more_vert" size="sm">
+            <q-menu
+              auto-close
+              anchor="top left"
+              content-class="bg-secondary"
+            >
 
+              <q-btn round flat color="white" icon="create" size="sm"/>
+              <q-btn round flat color="white" icon="delete" size="sm"/>
+            </q-menu>
+          </q-btn>
+        </q-item-section>
         <q-item-section>
           <q-item-label class="text-white">Monstera</q-item-label>
+        </q-item-section>
+      </q-item>
+      <q-item dense>
+
+        <q-item-section>
           <q-item-label caption class="text-white">
             Monstera deliciosa Liebm.
           </q-item-label>
@@ -19,20 +31,18 @@
         </q-item-section>
 
         <q-item-section side top>
-          <q-btn round class="text-white bg-primary-gradient" icon="opacity" />
+          <q-btn round class="text-white bg-primary-gradient" icon="opacity"/>
         </q-item-section>
       </q-item>
 
-      <q-card-actions align="around">
-        <q-btn flat round color="primary" class="text-white" icon="delete" />
-        <q-btn flat round color="primary" class="text-white" icon="create" />
+      <q-card-actions align="around" class="q-pa-none" @click="expanded = !expanded">
         <q-btn
+          style="width: 100%"
           color="white"
-          round
           flat
           dense
+          disable
           :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'"
-          @click="expanded = !expanded"
         />
       </q-card-actions>
       <q-slide-transition>
@@ -40,6 +50,11 @@
           <q-card-section class="text-subtitle2">
             <q-list>
               <q-item clickable v-ripple>
+                <q-item-section avatar>
+                  <q-avatar square rounded size="3rem">
+                    <img src="https://i.imgur.com/FTGpvaV.jpg">
+                  </q-avatar>
+                </q-item-section>
                 <q-item-section>
                   <q-item-label class="text-white">&#127774; Sunlight</q-item-label>
                   <q-item-label caption class="text-white">
