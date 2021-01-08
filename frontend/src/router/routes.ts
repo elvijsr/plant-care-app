@@ -14,6 +14,7 @@ const routes: RouteConfig[] = [
     component: () => import('layouts/VisitorLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Login.vue') },
+      { path: 'register', component: () => import('pages/Register.vue') },
     ],
   },
 

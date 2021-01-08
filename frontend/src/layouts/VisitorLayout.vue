@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header class="bg-transparent">
       <q-toolbar>
-        <q-toolbar-title class="text-white">
+        <q-toolbar-title class="text-white text-center">
           &#127793; Welcome to Plant Care App!
         </q-toolbar-title>
       </q-toolbar>
@@ -14,6 +14,5 @@
 </template>
 
 <script lang="ts">
-
 
 </script>
